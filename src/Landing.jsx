@@ -55,7 +55,18 @@ export default function Landing() {
     return () => window.removeEventListener("scroll", h);
   }, []);
 
-  const handleSubmit = () => { if (email.includes("@")) { setSubmitted(true); setEmail("") } };
+  const handleSubmit = async () => {
+    if (!email.includes("@")) return;
+    try {
+      await fetch("https://api.convertkit.com/v3/forms/9216002/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ api_key: "B5FBOzmpHUNVhMmY4FQsYQ", email })
+      });
+    } catch(e) {}
+    setSubmitted(true);
+    setEmail("");
+  };
 
   return (
     <div style={S.page}>
