@@ -1,3 +1,5 @@
+import { inject } from '@vercel/analytics';
+inject();
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import Landing from './Landing.jsx'
