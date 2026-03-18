@@ -270,8 +270,8 @@ function PremiumModal(){return (<div style={S.ov} onClick={()=>setShowPremium(fa
 </div>
 {/* Pricing options */}
 <div style={{display:"flex",gap:10,marginBottom:18}}>
-<div style={{flex:1,background:"#F8F6F3",borderRadius:14,padding:"14px 12px",border:"2px solid transparent",cursor:"pointer"}}>
-<div style={{fontSize:9,fontWeight:700,color:"#888",textTransform:"uppercase",letterSpacing:1}}>Mensuel</div>
+<div style={{flex:1,background:"#F8F6F3",borderRadius:14,padding:"14px 12px",border:"2px solid #2D6A4F",cursor:"pointer"}}>
+<div style={{fontSize:9,fontWeight:700,color:"#2D6A4F",textTransform:"uppercase",letterSpacing:1}}>Mensuel</div>
 <div style={{fontSize:24,fontWeight:800,color:"#1B4332",fontFamily:"'DM Mono',monospace",marginTop:4}}>{PREMIUM.monthly}€<span style={{fontSize:11,fontWeight:500,color:"#888"}}>/mois</span></div>
 </div>
 <div style={{flex:1,background:"#F0FFF4",borderRadius:14,padding:"14px 12px",border:"2px solid #2D6A4F",position:"relative",cursor:"pointer"}}>
